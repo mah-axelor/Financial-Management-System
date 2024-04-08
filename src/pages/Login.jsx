@@ -1,11 +1,9 @@
+import ContinueWithGoogle from "../components/ContinueWithGoogle"
 import { useAuth } from "../contexts/authContext"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 
 export default function(){
 const {currentUser} = useAuth()
-    return <div>
-        <input type="text"/>
-        <button >sign in</button>
-        <br/>
-        {currentUser.name}
-    </div>
+    return <ContinueWithGoogle style={{marginLeft:"12px"}}/>
 }

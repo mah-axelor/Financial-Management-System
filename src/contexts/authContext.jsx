@@ -7,8 +7,9 @@ export function useAuth(){
    return useContext(authContext); 
 }
 export function AuthProvider({children}){
-    const [currentUser, setCurrentUser] = useState({id:1,name:"bomba"})
-
+    const [currentUser, setCurrentUser] = useState()
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const value ={currentUser}
     return ( <authContext.Provider value={value}>
