@@ -11,7 +11,7 @@ export function AuthProvider({children}){
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
 
-    const value ={currentUser}
+    const value ={currentUser, isLoggedIn}
     return ( <authContext.Provider value={value}>
         {children}
     </authContext.Provider>)
