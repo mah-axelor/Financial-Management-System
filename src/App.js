@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { AuthProvider, useAuth } from './contexts/authContext';
+import {AuthProvider} from './contexts/authContext';
 import Router from './Router';
 
 function App() {
